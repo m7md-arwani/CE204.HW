@@ -1,5 +1,5 @@
 # CE204.HW
-This simple program solves a question that states.
+This simple program solves a question that states..
 
 "You are given a file called “std” and composed of “Number, Name, Address” fields.
 (You can define the type of fields by yourself) Write an algorithm that makes “insert,
