@@ -13,4 +13,4 @@ Also, a text file will be created and updated every time the program gets execut
 Note that the path of the text file in the program should be changed depending on your environment.
 
 The code was written assuming that the user will cooperate, which is impossible in reality.
-You write something wrong, the program will break. Didn't have time to handle this stuff.
+You write something wrong, the program breaks. Didn't have time to handle this stuff.
