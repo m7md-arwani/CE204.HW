@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 public class activity {
-    private static Hashtable<Integer, stu> h = new Hashtable<>();
+    public static Hashtable<Integer, stu> h = new Hashtable<>();
     private static Set<Integer> keys = h.keySet(); // will be used to iterate over the hastable
 
     public static void main(String[] args) {
@@ -42,7 +42,7 @@ public class activity {
 
     }
 
-    private static void addStudent() {
+    public static void addStudent() {
         Scanner get = new Scanner(System.in);
         System.out.println("Enter the key");
         int k = get.nextInt();
@@ -56,7 +56,7 @@ public class activity {
         get.close();
     }
 
-    private static void removeStudent() {
+    public static void removeStudent() {
         Scanner get = new Scanner(System.in);
         System.out.println("Ente the key you want to remove");
         int kToRm = get.nextInt();
@@ -65,7 +65,7 @@ public class activity {
         get.close();
     }
 
-    private static void showStudent() {
+    public static void showStudent() {
         Scanner get = new Scanner(System.in);
         System.out.println("Enter the key to show its info");
         int kToRe = get.nextInt();
@@ -77,7 +77,7 @@ public class activity {
         get.close();
     }
 
-    private static void modifyStudent() {
+    public static void modifyStudent() {
         Scanner get = new Scanner(System.in);
         System.out.println("Enter the key to modify");
         int km = get.nextInt();

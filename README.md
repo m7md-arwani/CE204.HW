@@ -6,7 +6,7 @@ This simple program solves a question that states..
 delete, update and retrieve”, processes on the records in the file. The “Number” field is the
 key of each record."
 
-The idea is to use a hashtable to store the data in the form of <key, value>, where the key is an integer and the value is a class named stu.
+The idea is to use a hashtable to store the data in the form of <key, value>, where the key is an integer and the value is an object of the class stu.
 The class will store the name and the address of a student.
 
 Also, a text file will be created and updated every time the program gets executed to unsure correct data.
