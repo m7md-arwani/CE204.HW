@@ -22,10 +22,10 @@ public class activity {
         }
         get.close();
 
-        updateFile();
+        writeFile();
     }
 
-    private static void updateFile() {
+    private static void writeFile() {
         try {
             FileWriter writer = new FileWriter("C:/Users/Arwani/Desktop/std.txt"); // change file path if needed.
             writer.write("Number    Name    Address\n"); // the head of the text file.

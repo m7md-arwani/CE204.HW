@@ -1,6 +1,7 @@
 import org.junit.After;
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
@@ -13,7 +14,6 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class activityTest {
     private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
-
 
 
     @Test
@@ -37,15 +37,15 @@ public class activityTest {
     @Test
     void testRemoveStudent() {
         // Given
-    String input = "2\n1";
-    InputStream in = new ByteArrayInputStream(input.getBytes());
-    System.setIn(in);
+        String input = "2\n1";
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
 
-    // When
+        // When
         activity.removeStudent();
-    // Then
+        // Then
 
-    assertNull(activity.h.get(1));
+        assertNull(activity.h.get(1));
 
     }
 }
