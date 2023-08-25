@@ -44,8 +44,17 @@ public class activity {
 
     public static void addStudent() {
         Scanner get = new Scanner(System.in);
-        System.out.println("Enter the key");
-        int k = get.nextInt();
+        int k;
+
+        do {
+            System.out.println("Enter the key");
+            while (!get.hasNextInt()) {
+                System.out.println("This is not a number");
+                get.next();
+            }
+            k = get.nextInt();
+
+        } while (k <= 0);
         get.nextLine();
         System.out.println("Enter the name");
         String n = get.nextLine();
@@ -58,8 +67,16 @@ public class activity {
 
     public static void removeStudent() {
         Scanner get = new Scanner(System.in);
-        System.out.println("Ente the key you want to remove");
-        int kToRm = get.nextInt();
+        int kToRm;
+        do {
+            System.out.println("Ente the key you want to remove");
+            while (!get.hasNextInt()) {
+                System.out.println("This is not a number");
+                get.next();
+            }
+            kToRm = get.nextInt();
+
+        } while (kToRm <= 0);
         h.remove(kToRm);
         System.out.println("Done!");
         get.close();
